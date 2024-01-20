@@ -50,7 +50,7 @@ This line imports the Bogue library into the current scope, so you can use its f
 
 ```let () =```
 
-This line starts the definition of a function with no arguments and no return value. It’s often used for side-effecting functions like printing to the console or running a GUI, as in this case.
+This is the entry point of the code and defines the return value which is of type unit (). This line defines the value of the expressions on the right. It's a pattern match of the form ```let pattern = expression```. ```Bogue.run``` will return a unit ```()```  and this will match with the unit ```()``` on the left and the compiler will be happy and we will have our side-effects from Bogue.run.
 
 ```Widget.label "Hello world"```
 
